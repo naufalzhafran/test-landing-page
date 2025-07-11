@@ -1,32 +1,34 @@
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-md sticky top-0 z-50">
+      <header className="bg-gradient-accent shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-gray-900 font-heading">
-                Premium Indonesian Charcoal
-              </h1>
+                <Image
+                  src="/logo.png"
+                  alt="Company Logo"
+                  width={200}
+                  height={200}
+                  style={{ verticalAlign: 'middle', marginRight: '0px' }} // Inline styling example
+                />
             </div>
             <nav className="hidden md:flex space-x-8">
-              <Link href="#products" className="text-gray-700 hover:text-gray-900 transition-colors">
+              <Link href="#products" className="text-gray-700 hover:text-gray-900 transition-colors font-bold">
                 Products
               </Link>
-              <Link href="#about" className="text-gray-700 hover:text-gray-900 transition-colors">
-                About
+              <Link href="#about" className="text-gray-700 hover:text-gray-900 transition-colors font-bold">
+                About Us
               </Link>
-              <Link href="#quality" className="text-gray-700 hover:text-gray-900 transition-colors">
+              <Link href="#quality" className="text-gray-700 hover:text-gray-900 transition-colors font-bold">
                 Quality
               </Link>
-              <Link href="#shipping" className="text-gray-700 hover:text-gray-900 transition-colors">
+              <Link href="#shipping" className="text-gray-700 hover:text-gray-900 transition-colors font-bold">
                 Shipping
-              </Link>
-              <Link href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors">
-                Contact
               </Link>
             </nav>
             <div className="flex items-center space-x-4">
@@ -34,7 +36,7 @@ export default function Home() {
                 href="#contact"
                 className="btn btn-primary"
               >
-                Get Quote
+                Contact Us!
               </Link>
             </div>
           </div>
@@ -45,7 +47,7 @@ export default function Home() {
       <section className="bg-gradient-primary hero-pattern text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 hero-title text-white font-heading">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 hero-title text-hero-white font-heading">
               Indonesia&apos;s #1 Premium
               <span className="text-gradient block">Charcoal Supplier</span>
             </h1>
@@ -56,15 +58,15 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
               <Link
                 href="#contact"
-                className="btn btn-accent text-lg px-8 py-4"
+                className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
               >
-                Get Free Quote
+                Our Products
               </Link>
               <Link
                 href="#contact"
                 className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
               >
-                Request Free Samples
+                Contact Us
               </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
@@ -707,7 +709,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Premium Indonesian Charcoal. All rights reserved.</p>
+            <p>&copy; 2025 PT. Skala Sinergi Indonesia. Sinergi Charcoal Nusantara. All rights reserved.</p>
           </div>
         </div>
       </footer>

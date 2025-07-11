@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 
+
 :root {
+  
+  --font-monsterrat: "Montserrat", sans-serif;
   --font-inter: "Inter", sans-serif;
   --font-playfair: "Playfair Display", serif;
   
@@ -8,7 +12,7 @@
   --color-primary: #1a1a1a;
   --color-secondary: #2d2d2d;
   --color-accent: #d4af37;
-  --color-accent-light: #e5c547;
+  --color-accent-light: #ff762d;
   --color-success: #059669;
   --color-warning: #d97706;
   --color-error: #dc2626;
@@ -57,7 +61,7 @@ html {
 }
 
 body {
-  font-family: var(--font-inter);
+  font-family: var(--font-monsterrat);
   line-height: 1.6;
   color: var(--color-gray-900);
   background-color: white;
@@ -67,19 +71,40 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair);
+  font-family: var(--font-monsterrat);
   font-weight: 700;
   line-height: 1.25;
   color: var(--color-primary);
 }
 
+.glass-header {
+  /* Semi-transparent white background */
+  background-color: rgba(255, 255, 255, 0.15); /* Adjust opacity (0.15 is 15%) */
+
+  /* Apply the blur effect to content behind the header */
+  backdrop-filter: blur(10px); /* Adjust blur strength (e.g., 5px, 15px) */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+
+  /* Optional: Add a subtle light border */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent white border */
+
+  /* Optional: Remove or adjust the existing shadow-md if it conflicts with the glass look */
+  /* box-shadow: none; */
+  /* Or customize a new subtle shadow if desired */
+  /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); */
+}
+
+.text-hero-white {
+  color: white;
+}
+
 /* Custom utility classes */
 .font-heading {
-  font-family: var(--font-playfair);
+  font-family: var(--font-monsterrat);
 }
 
 .font-body {
-  font-family: var(--font-inter);
+  font-family: var(--font-monsterrat);
 }
 
 .text-gradient {
@@ -94,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-gradient-accent {
-  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+  background: linear-gradient(120deg, var(--color-accent), var(--color-accent-light));
 }
 
 /* Button styles */
@@ -107,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-secondary {
-  @apply bg-transparent text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white focus:ring-gray-900;
+  @apply bg-accent text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white focus:ring-gray-900;
 }
 
 .btn-accent {
@@ -130,11 +155,55 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero section styles */
 .hero-pattern {
-  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
-  background-size: 20px 20px;
+
+  background-image: url('/hero-background.png'); /* Adjust path as needed */
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  min-height: 900px; /* Adjust as per your design */
+
+  position: relative; /* Needed for pseudo-element overlay */
+  z-index: 0; /* Ensure content is above the pseudo-element */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* For text inside hero-content */
 }
 
-/* Animation utilities */
+
+/* Optional: Overlay for better text readability */
+.hero-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark semi-transparent overlay */
+  z-index: -1; /* Place it behind the content but above the image */
+}
+
+.hero-content {
+  color: white; /* Text color for content over dark background */
+  padding: 2rem;
+  max-width: 800px; /* Constrain content width */
+  position: relative;
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 400px; /* Smaller height on mobile */
+  }
+}
+
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out;
 }
@@ -163,7 +232,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Responsive design helpers */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
