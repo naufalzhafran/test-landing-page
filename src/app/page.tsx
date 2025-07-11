@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -47,7 +46,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 hero-title text-white font-heading">
-              Indonesia's #1 Premium
+              Indonesia&apos;s #1 Premium
               <span className="text-gradient block">Charcoal Supplier</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-200 hero-subtitle">
@@ -115,7 +114,7 @@ export default function Home() {
                 <div className="text-2xl">🛡️</div>
               </div>
               <h3 className="text-xl font-semibold mb-2">100% Reliable</h3>
-              <p className="text-gray-600">Money-back guarantee if you're not satisfied with our products</p>
+              <p className="text-gray-600">Money-back guarantee if you&apos;re not satisfied with our products</p>
             </div>
             <div className="text-center">
               <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-md">
@@ -451,7 +450,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Experience the quality of our products firsthand with up to 2kg of free samples. 
-              See why we're Indonesia's trusted charcoal supplier.
+              See why we&apos;re Indonesia&apos;s trusted charcoal supplier.
             </p>
             <div className="bg-gray-50 rounded-2xl p-8 max-w-4xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -671,7 +670,7 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold mb-4 font-heading">Premium Indonesian Charcoal</h3>
               <p className="text-gray-400 mb-4">
-                Indonesia's leading charcoal supplier, delivering premium quality products to over 20 countries worldwide.
+                Indonesia&apos;s leading charcoal supplier, delivering premium quality products to over 20 countries worldwide.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-400 hover:text-white">LinkedIn</a>
