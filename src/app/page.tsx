@@ -64,7 +64,7 @@ export default function Home() {
               <span className="text-gradient block">Charcoal & Briquettes</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-200 hero-subtitle">
-              Indonesia's leading world-class quality coconut shell charcoal,
+              Indonesia&apos;s leading world-class quality coconut shell charcoal,
               wood charcoal, and briquettes from Indonesia.
             </p>
             <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-200 hero-subtitle">
