@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Premium Indonesian Charcoal Supplier | Export Quality Coconut & Wood Charcoal",
+  title: "Indonesia Charcoal Briquettes Manufacturer | Export Quality Coconut & Wood Charcoal | Sinergi Charcoal Nusantara",
   description: "Leading Indonesian charcoal supplier offering premium coconut shell charcoal, wood charcoal, and briquettes for global export. ISO certified, competitive pricing, worldwide shipping.",
   keywords: [
     "Indonesian charcoal",

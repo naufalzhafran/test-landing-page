@@ -48,15 +48,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 hero-title text-hero-white font-heading">
-              Indonesia&apos;s #1 Premium
-              <span className="text-gradient block">Charcoal Supplier</span>
+              Sinergi Charcoal Nusantara
+              <span className="text-gradient block">Charcoal & Briquettes</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-200 hero-subtitle">
-              Exporting world-class coconut shell charcoal, wood charcoal, and briquettes globally. 
-              ISO certified quality, competitive pricing, and reliable worldwide shipping.
+              Indonesia's leading world-class quality coconut shell charcoal, wood charcoal, and briquettes from Indonesia. 
+            </p>
+            <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-200 hero-subtitle">
+            Competitive pricing, and reliable shipping worldwide.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-              <Link
+              {/* <Link
                 href="#contact"
                 className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
               >
@@ -67,7 +69,7 @@ export default function Home() {
                 className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
               >
                 Contact Us
-              </Link>
+              </Link> */}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
               <div className="text-center">
@@ -92,13 +94,13 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-50">
+      <section id="about" className="py-20 bg-gradient-accent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading">
               The Indonesian Charcoal Experience
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-50 max-w-3xl mx-auto">
               With extensive experience in global trade, we deliver premium charcoal products worldwide. 
               From production to packaging, we offer complete OEM solutions tailored to your needs.
             </p>
