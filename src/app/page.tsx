@@ -343,7 +343,7 @@ export default function Home() {
               Partnership Opportunities
             </h2>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Join forces with Indonesia's leading charcoal supplier. We offer
+              Join forces with Indonesia&apos;s leading charcoal supplier. We offer
               flexible partnership models to help you grow your business.
             </p>
           </div>
@@ -466,7 +466,7 @@ export default function Home() {
                   Ready to Partner?
                 </h3>
                 <p className="text-gray-100 mb-6">
-                  Let's discuss how we can build a successful partnership
+                  Let&apos;s discuss how we can build a successful partnership
                   together.
                 </p>
                 <div className="space-y-3">
@@ -526,7 +526,7 @@ export default function Home() {
                   Contact Us
                 </h3>
                 <p className="text-gray-200">
-                  Let's discuss your charcoal requirements
+                  Let&apos;s discuss your charcoal requirements
                 </p>
               </div>
 

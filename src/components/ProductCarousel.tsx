@@ -155,7 +155,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
                 width: `${products.length * (320 + 24) - 24}px` // Total width of all products
               }}
             >
-              {products.map((product, index) => (
+              {products.map((product) => (
                 <div
                   key={product.id}
                   className="card card-hover flex-shrink-0 w-80"
