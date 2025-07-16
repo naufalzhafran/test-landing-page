@@ -17,8 +17,8 @@ export default function Home() {
               <Image
                 src="/logo.png"
                 alt="Company Logo"
-                width={120}
-                height={120}
+                width={180}
+                height={180}
                 style={{ verticalAlign: "middle", marginRight: "0px" }} // Inline styling example
               />
             </div>
@@ -37,7 +37,7 @@ export default function Home() {
                 >
                   About Us
                 </Link>
-                <Link
+                {/* <Link
                   href="#quality"
                   className="text-gray-700 hover:text-gray-900 transition-colors font-bold"
                 >
@@ -48,7 +48,7 @@ export default function Home() {
                   className="text-gray-700 hover:text-gray-900 transition-colors font-bold"
                 >
                   Shipping
-                </Link>
+                </Link> */}
               </nav>
               <div className="flex items-center space-x-4">
                 <Link href="#contact" className="btn btn-primary">
@@ -118,7 +118,7 @@ export default function Home() {
             {/* Left: Description */}
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading">
-                The Indonesian Charcoal Experience
+                PT. Skala Sinergi Indonesia
               </h2>
               <p className="text-xl text-gray-50 max-w-3xl">
                 With extensive experience in global trade, we deliver premium
@@ -287,12 +287,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading">
-              How We Work
+              Our Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {/* <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Take your brand to the next level with our OEM services. Custom
               products, packaging, and branding solutions.
-            </p>
+            </p> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
@@ -340,16 +340,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading text-white">
-              Partnership Opportunities
+              Our partners
             </h2>
-            <p className="text-xl text-white max-w-3xl mx-auto">
+            {/* <p className="text-xl text-white max-w-3xl mx-auto">
               Join forces with Indonesia&apos;s leading charcoal supplier. We offer
               flexible partnership models to help you grow your business.
-            </p>
+            </p> */}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center border border-white/20">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"> */}
+            {/* <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center border border-white/20">
               <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <div className="text-2xl">🤝</div>
               </div>
@@ -366,9 +366,9 @@ export default function Home() {
                 <li>• Volume-based discounts</li>
                 <li>• Technical support</li>
               </ul>
-            </div>
+            </div> */}
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center border border-white/20">
+            {/* <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center border border-white/20">
               <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <div className="text-2xl">🏭</div>
               </div>
@@ -404,12 +404,12 @@ export default function Home() {
                 <li>• Flexible payment terms</li>
                 <li>• Logistics coordination</li>
               </ul>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
 
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
+              {/* <div>
                 <h3 className="text-2xl font-bold mb-4 text-white">
                   Why Partner With Us?
                 </h3>
@@ -459,17 +459,17 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="text-center">
-                <h3 className="text-xl font-bold mb-4 text-white">
+                {/* <h3 className="text-xl font-bold mb-4 text-white">
                   Ready to Partner?
                 </h3>
                 <p className="text-gray-100 mb-6">
                   Let&apos;s discuss how we can build a successful partnership
                   together.
-                </p>
-                <div className="space-y-3">
+                </p> */}
+                {/* <div className="space-y-3">
                   <a
                     href="#contact"
                     className="block bg-white text-gray-900 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-[1.02]"
@@ -479,7 +479,7 @@ export default function Home() {
                   <div className="text-sm text-gray-200">
                     or call us directly at +62 XXX XXX XXXX
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -497,11 +497,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading">
-              Get in Touch
+              Quotation & Inquiry
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to start your charcoal import business? Contact us today for
-              quotes, samples, or any questions.
+              Contact us today for quotes, samples, or any questions.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -509,11 +508,11 @@ export default function Home() {
             <div className="lg:sticky lg:top-24">
               <div className="mb-6">
                 <h3 className="text-2xl font-semibold mb-3 text-gray-800">
-                  See Our Operations
+                  Our gallery
                 </h3>
-                <p className="text-gray-600">
+                {/* <p className="text-gray-600">
                   Take a look at our modern facilities and quality processes
-                </p>
+                </p> */}
               </div>
               <GalleryCarousel />
             </div>
@@ -525,9 +524,9 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-white mb-2">
                   Contact Us
                 </h3>
-                <p className="text-gray-200">
+                {/* <p className="text-gray-200">
                   Let&apos;s discuss your charcoal requirements
-                </p>
+                </p> */}
               </div>
 
               {/* Contact Information */}
@@ -538,7 +537,7 @@ export default function Home() {
                     <div>
                       <div className="font-medium text-gray-800">Email</div>
                       <div className="text-sm text-gray-600">
-                        info@premiumcharcoal.com
+                        skalasinergi@gmail.com
                       </div>
                     </div>
                   </div>
@@ -602,7 +601,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-
+{/* 
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
                       Product Interest
@@ -620,7 +619,7 @@ export default function Home() {
                       <option>Custom/OEM Products</option>
                       <option>Bulk Orders</option>
                     </select>
-                  </div>
+                  </div> */}
 
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -649,12 +648,12 @@ export default function Home() {
                     </button>
                   </div>
 
-                  <div className="text-center pt-4">
+                  {/* <div className="text-center pt-4">
                     <p className="text-sm text-gray-500">
                       We typically respond within 2-4 hours during business
                       hours
                     </p>
-                  </div>
+                  </div> */}
                 </form>
               </div>
             </div>
@@ -670,15 +669,15 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4 font-heading">
                 Sinergi Charcoal Nusantara
               </h3>
-              <p className="text-gray-400 mb-4">
-                Indonesia&apos;s leading world-class quality coconut shell
-                charcoal, wood charcoal, and briquettes supplier with
-                competitive pricing and reliable shipping worldwide.
+              <p className="flex items-center space-x-4 text-sm text-gray-400 mb-4">
+                Puri Botanic Junction Blok I9 No. 5 Jl. Joglo Raya, RT. 007, RW. 001.
+                Kelurahan Joglo. Kecamatan Kembangan, Jakarta Barat.
+                Provinsi DKI Jakarta, 11640.
               </p>
               <div className="flex items-center space-x-4 text-sm text-gray-400 mb-4">
-                <span>📧 info@premiumcharcoal.com</span>
+                <span>skalasinergi@gmail.com</span>
               </div>
-              <div className="flex space-x-4">
+              {/* <div className="flex space-x-4">
                 <a
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -697,9 +696,9 @@ export default function Home() {
                 >
                   WhatsApp
                 </a>
-              </div>
+              </div> */}
             </div>
-            <div>
+            {/* <div>
               <h4 className="text-lg font-semibold mb-4">Our Products</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
@@ -751,8 +750,8 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <h4 className="text-lg font-semibold mb-4">
                 Services & Partnership
               </h4>
@@ -800,8 +799,8 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <h4 className="text-lg font-semibold mb-4">Company Info</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
@@ -850,7 +849,7 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-gray-400">
