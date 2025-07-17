@@ -150,7 +150,7 @@ export default function Home() {
             products={[
               {
                 id: "coconut-shell-briquettes",
-                emoji: "🥥",
+                image: "/product-selection/Coconut Briquettes.webp",
                 title: "Coconut Shell Charcoal Briquettes",
                 description:
                   "Perfect for shisha and hookah. Clean burn, minimal ash, long-lasting heat.",
@@ -164,7 +164,7 @@ export default function Home() {
               },
               {
                 id: "premium-wood-charcoal",
-                emoji: "🪵",
+                image: "/product-selection/Wood Charcoal Briquettes.webp",
                 title: "Premium Wood Charcoal",
                 description:
                   "Made from Halaban and Binchotan wood. High heat output and durability.",
@@ -177,78 +177,8 @@ export default function Home() {
                 ],
               },
               {
-                id: "bbq-charcoal-briquettes",
-                emoji: "🔥",
-                title: "BBQ Charcoal Briquettes",
-                description:
-                  "Consistent heat and clean burn for perfectly cooked meals every time.",
-                price: "$650/ton",
-                features: [
-                  "Even heat distribution",
-                  "No sparks or pops",
-                  "Easy to light",
-                  "Food-safe materials",
-                ],
-              },
-              {
-                id: "sawdust-charcoal",
-                emoji: "🌾",
-                title: "Sawdust Charcoal",
-                description:
-                  "Engineered for steady, long-lasting heat. Perfect for restaurants and events.",
-                price: "$740/ton",
-                features: [
-                  "Consistent heat output",
-                  "Longer burning time",
-                  "Minimal ash residue",
-                  "Eco-friendly production",
-                ],
-              },
-              {
-                id: "hardwood-charcoal",
-                emoji: "🌳",
-                title: "Premium Hardwood Charcoal",
-                description:
-                  "High-grade hardwood charcoal with superior heat retention and minimal smoke.",
-                price: "$480/ton",
-                features: [
-                  "4+ hours burning time",
-                  "High carbon content",
-                  "Low moisture",
-                  "Consistent size pieces",
-                ],
-              },
-              {
-                id: "bamboo-charcoal",
-                emoji: "🎋",
-                title: "Bamboo Charcoal",
-                description:
-                  "Sustainable bamboo charcoal with excellent heat output and eco-friendly properties.",
-                price: "$520/ton",
-                features: [
-                  "Fast ignition",
-                  "Clean burning",
-                  "Sustainable source",
-                  "Natural purification",
-                ],
-              },
-              {
-                id: "restaurant-grade-briquettes",
-                emoji: "🍳",
-                title: "Restaurant Grade Briquettes",
-                description:
-                  "Professional-grade briquettes designed for commercial kitchens and restaurants.",
-                price: "$680/ton",
-                features: [
-                  "5+ hours burning time",
-                  "Consistent temperature",
-                  "Food service approved",
-                  "Bulk packaging available",
-                ],
-              },
-              {
                 id: "hookah-premium-cubes",
-                emoji: "💨",
+                image: "/product-selection/Cube Sisha Briquettes.webp",
                 title: "Hookah Premium Cubes",
                 description:
                   "Premium cube-shaped briquettes specifically designed for hookah lounges.",
@@ -261,17 +191,45 @@ export default function Home() {
                 ],
               },
               {
-                id: "eco-charcoal-logs",
-                emoji: "♻️",
-                title: "Eco Charcoal Logs",
+                id: "cylinder-briquettes",
+                image: "/product-selection/Cylinder Briquettes.webp",
+                title: "Cylinder Charcoal Briquettes",
                 description:
-                  "Environmentally friendly charcoal logs made from recycled wood waste.",
+                  "Uniform cylinder shape for consistent heat distribution and easy handling.",
+                price: "$650/ton",
+                features: [
+                  "Uniform cylinder shape",
+                  "Even heat distribution",
+                  "Easy to stack and store",
+                  "Consistent burning time",
+                ],
+              },
+              {
+                id: "pillow-briquettes",
+                image: "/product-selection/Pillow Briquettes.webp",
+                title: "Pillow BBQ Briquettes",
+                description:
+                  "Classic pillow-shaped briquettes perfect for BBQ and grilling enthusiasts.",
+                price: "$680/ton",
+                features: [
+                  "Classic pillow shape",
+                  "Ideal for BBQ grilling",
+                  "Long burning duration",
+                  "Food-safe materials",
+                ],
+              },
+              {
+                id: "wood-pellets",
+                image: "/product-selection/Wood Pellets.webp",
+                title: "Premium Wood Pellets",
+                description:
+                  "High-quality wood pellets for efficient heating and cooking applications.",
                 price: "$380/ton",
                 features: [
-                  "100% recycled materials",
-                  "Carbon neutral",
-                  "Long burning logs",
-                  "Eco-certified",
+                  "100% natural wood",
+                  "Low ash content",
+                  "High energy density",
+                  "Eco-friendly fuel",
                 ],
               },
             ]}
@@ -340,147 +298,85 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-heading text-white">
-              Our partners
+              Our Partners & Certifications
             </h2>
-            {/* <p className="text-xl text-white max-w-3xl mx-auto">
-              Join forces with Indonesia&apos;s leading charcoal supplier. We offer
-              flexible partnership models to help you grow your business.
-            </p> */}
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+              Trusted by leading organizations and certified by government institutions
+            </p>
           </div>
 
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"> */}
-            {/* <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center border border-white/20">
-              <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                <div className="text-2xl">🤝</div>
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                Distribution Partners
-              </h3>
-              <p className="text-white mb-6">
-                Become an exclusive distributor in your region. Access wholesale
-                pricing and marketing support.
-              </p>
-              <ul className="text-sm text-gray-100 space-y-2">
-                <li>• Exclusive territory rights</li>
-                <li>• Marketing materials included</li>
-                <li>• Volume-based discounts</li>
-                <li>• Technical support</li>
-              </ul>
-            </div> */}
-
-            {/* <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center border border-white/20">
-              <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                <div className="text-2xl">🏭</div>
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                Private Label Partners
-              </h3>
-              <p className="text-white mb-6">
-                Build your own charcoal brand with our manufacturing expertise
-                and quality standards.
-              </p>
-              <ul className="text-sm text-gray-100 space-y-2">
-                <li>• Custom product development</li>
-                <li>• Your brand, our quality</li>
-                <li>• Flexible MOQ requirements</li>
-                <li>• Design & packaging support</li>
-              </ul>
-            </div>
-
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 text-center border border-white/20">
-              <div className="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                <div className="text-2xl">🌍</div>
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">
-                Import Partners
-              </h3>
-              <p className="text-white mb-6">
-                Established importers looking for reliable supply chains and
-                consistent quality products.
-              </p>
-              <ul className="text-sm text-gray-100 space-y-2">
-                <li>• Guaranteed supply reliability</li>
-                <li>• Competitive pricing tiers</li>
-                <li>• Flexible payment terms</li>
-                <li>• Logistics coordination</li>
-              </ul>
-            </div> */}
-          {/* </div> */}
-
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              {/* <div>
-                <h3 className="text-2xl font-bold mb-4 text-white">
-                  Why Partner With Us?
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <div className="text-green-400 mr-3 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-white">
-                        Proven Track Record
-                      </h4>
-                      <p className="text-gray-100 text-sm">
-                        Over 500+ satisfied clients across 20+ countries
-                      </p>
-                    </div>
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 items-center">
+              {[
+                {
+                  name: "Asosiasi Logistik & Forwarding Indonesia",
+                  image: "/partners/Asosiasi Logistik & Forwarding Indonesia.webp"
+                },
+                {
+                  name: "Carsurin",
+                  image: "/partners/Carsurin.webp"
+                },
+                {
+                  name: "go4WorldBusiness",
+                  image: "/partners/go4WorldBusiness.webp"
+                },
+                {
+                  name: "Kamar Dagang Indonesia",
+                  image: "/partners/Kamar Dagang Indonesia.webp"
+                },
+                {
+                  name: "Kementerian Hukum Dan HAM",
+                  image: "/partners/Kementerian-Hukum-Dan-Ham-Kemenkumham-Logo-Vector-150x150.webp"
+                },
+                {
+                  name: "Bea dan Cukai",
+                  image: "/partners/Lambang_Bea_dan_Cukai.svg.webp"
+                },
+                {
+                  name: "ACT",
+                  image: "/partners/LOGO_ACT_NEW_clear-bg.webp"
+                },
+                {
+                  name: "Direktorat Jenderal Pajak",
+                  image: "/partners/Logo_djp.svg-166x300.webp"
+                },
+                {
+                  name: "BKPM",
+                  image: "/partners/Logo_Kementerian_Investasi_BKPM_Warna_Square.webp"
+                },
+                {
+                  name: "Sucofindo",
+                  image: "/partners/Logo_sucofindo.webp"
+                },
+                {
+                  name: "MSDS",
+                  image: "/partners/logo-msds.webp"
+                },
+                {
+                  name: "Maersk",
+                  image: "/partners/Maersk_1-300x271.webp"
+                },
+                {
+                  name: "Kementerian Perdagangan",
+                  image: "/partners/Mentri Perdagangan Republic Indonesia.webp"
+                }
+              ].map((partner, index) => (
+                <div key={index} className="flex flex-col items-center justify-center p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center justify-center h-16 mb-3">
+                    <Image
+                      src={partner.image}
+                      alt={partner.name}
+                      width={120}
+                      height={80}
+                      className="max-w-full h-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                      style={{ maxHeight: '60px' }}
+                    />
                   </div>
-                  <div className="flex items-start">
-                    <div className="text-green-400 mr-3 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-white">
-                        Quality Assurance
-                      </h4>
-                      <p className="text-gray-100 text-sm">
-                        ISO certified with rigorous quality control processes
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="text-green-400 mr-3 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-white">
-                        Flexible Solutions
-                      </h4>
-                      <p className="text-gray-100 text-sm">
-                        Customizable products and packaging to meet your needs
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="text-green-400 mr-3 mt-1">✓</div>
-                    <div>
-                      <h4 className="font-semibold text-white">
-                        Dedicated Support
-                      </h4>
-                      <p className="text-gray-100 text-sm">
-                        24/7 customer service and technical assistance
-                      </p>
-                    </div>
-                  </div>
+                  <p className="text-white text-xs text-center font-medium leading-tight">
+                    {partner.name}
+                  </p>
                 </div>
-              </div> */}
-
-              <div className="text-center">
-                {/* <h3 className="text-xl font-bold mb-4 text-white">
-                  Ready to Partner?
-                </h3>
-                <p className="text-gray-100 mb-6">
-                  Let&apos;s discuss how we can build a successful partnership
-                  together.
-                </p> */}
-                {/* <div className="space-y-3">
-                  <a
-                    href="#contact"
-                    className="block bg-white text-gray-900 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-[1.02]"
-                  >
-                    Start Partnership Discussion
-                  </a>
-                  <div className="text-sm text-gray-200">
-                    or call us directly at +62 XXX XXX XXXX
-                  </div>
-                </div> */}
-              </div>
+              ))}
             </div>
           </div>
         </div>

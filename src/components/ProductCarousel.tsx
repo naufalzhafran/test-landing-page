@@ -1,9 +1,10 @@
 "use client"
 import React, { useState, useCallback, useEffect, useRef } from "react";
+import Image from "next/image";
 
 interface Product {
   id: string;
-  emoji: string;
+  image: string;
   title: string;
   description: string;
   price: string;
@@ -160,8 +161,14 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
                   key={product.id}
                   className="card card-hover flex-shrink-0 w-80"
                 >
-                  <div className="h-48 bg-gray-200 flex items-center justify-center">
-                    <div className="text-6xl">{product.emoji}</div>
+                  <div className="h-48 bg-gray-200 flex items-center justify-center relative overflow-hidden">
+                    <Image
+                      src={product.image}
+                      alt={product.title}
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-300 group-hover:scale-105"
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-semibold mb-2 leading-tight">
