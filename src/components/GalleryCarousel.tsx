@@ -11,34 +11,64 @@ interface GalleryImage {
 // Gallery images - you can replace these with actual images
 const galleryImages: GalleryImage[] = [
   {
-    id: "factory-1",
-    src: "/hero-background.png", // placeholder - replace with actual factory images
-    alt: "Our modern production facility",
-    title: "Production Facility"
+    id: "about-us-1",
+    src: "/about-us/about-us-1.webp",
+    alt: "Our company facilities and operations",
+    title: "Our Products"
   },
   {
-    id: "quality-control",
-    src: "/hero-background.png", // placeholder
-    alt: "Quality control process",
-    title: "Quality Control"
+    id: "about-us-2",
+    src: "/about-us/about-us-2.webp",
+    alt: "Our production process",
+    title: "Production Process"
   },
   {
-    id: "packaging",
-    src: "/hero-background.png", // placeholder
-    alt: "Packaging and shipping process",
-    title: "Packaging Process"
+    id: "about-us-3",
+    src: "/about-us/about-us-3.webp",
+    alt: "Quality control and testing",
+    title: "Our Facilities"
   },
   {
-    id: "products",
-    src: "/hero-background.png", // placeholder
-    alt: "Our premium charcoal products",
-    title: "Premium Products"
+    id: "about-us-4",
+    src: "/about-us/about-us-4.webp",
+    alt: "Our manufacturing facility",
+    title: "Manufacturing"
   },
   {
-    id: "team",
-    src: "/hero-background.png", // placeholder
-    alt: "Our experienced team",
-    title: "Expert Team"
+    id: "about-us-5",
+    src: "/about-us/about-us-5.webp",
+    alt: "Our team at work",
+    title: "Production Process"
+  },
+  {
+    id: "about-us-6",
+    src: "/about-us/about-us-6.webp",
+    alt: "Packaging and shipping operations",
+    title: "Packaging & Shipping"
+  },
+  {
+    id: "about-us-7",
+    src: "/about-us/about-us-7.webp",
+    alt: "Raw materials and sourcing",
+    title: "Raw Materials"
+  },
+  {
+    id: "about-us-8",
+    src: "/about-us/about-us-8.webp",
+    alt: "Finished products showcase",
+    title: "Manufacturing"
+  },
+  {
+    id: "about-us-9",
+    src: "/about-us/about-us-9.webp",
+    alt: "Company operations overview",
+    title: "Operations"
+  },
+  {
+    id: "about-us-10",
+    src: "/about-us/about-us-10.webp",
+    alt: "Company culture and values",
+    title: "Our Facilities"
   }
 ];
 

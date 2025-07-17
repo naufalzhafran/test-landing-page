@@ -1,15 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const certifications = [
-  {
-    id: 'iso',
-    title: 'ISO 9001:2015',
-    subtitle: 'Quality Management',
-    image: '/quality-specs/iso-specifications.png'
-  },
   {
     id: 'msds',
     title: 'MSDS',
@@ -20,7 +14,7 @@ const certifications = [
     id: 'coa',
     title: 'COA',
     subtitle: 'Certificate of Analysis',
-    image: '/quality-specs/coa-specifications.png'
+    image: '/coa.webp'
   },
   {
     id: 'coo',
@@ -31,9 +25,43 @@ const certifications = [
 ];
 
 export default function QualitySection() {
-  const [activeCertification, setActiveCertification] = useState('iso');
+  const [activeCertification, setActiveCertification] = useState('msds');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState('');
+  const [modalTitle, setModalTitle] = useState('');
 
   const activeCert = certifications.find(cert => cert.id === activeCertification);
+
+  const openModal = (imageSrc: string, title: string) => {
+    setModalImage(imageSrc);
+    setModalTitle(title);
+    setIsModalOpen(true);
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalImage('');
+    setModalTitle('');
+    document.body.style.overflow = 'unset'; // Re-enable scrolling
+  };
+
+  // Handle ESC key press to close modal
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isModalOpen) {
+        closeModal();
+      }
+    };
+
+    if (isModalOpen) {
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isModalOpen]);
 
   return (
     <section id="quality" className="py-20 bg-gray-50">
@@ -97,22 +125,88 @@ export default function QualitySection() {
             <h3 className="text-xl font-semibold mb-4">
               Quality Specifications - {activeCert?.title}
             </h3>
-            <div className="relative w-full h-96 bg-gray-100 rounded-lg overflow-hidden">
+            <div 
+              className="relative w-full h-96 bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:bg-gray-200 transition-colors duration-200 group"
+              onClick={() => openModal(activeCert?.image || '/quality-specs/msds-specifications.png', activeCert?.title || 'Quality Specifications')}
+            >
               <Image
-                src={activeCert?.image || '/quality-specs/iso-specifications.png'}
+                src={activeCert?.image || '/quality-specs/msds-specifications.png'}
                 alt={`${activeCert?.title} Quality Specifications`}
                 fill
-                className="object-contain p-4"
+                className="object-contain p-4 group-hover:scale-105 transition-transform duration-200"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/10">
+                <div className="bg-white/90 px-4 py-2 rounded-lg shadow-lg">
+                  <span className="text-sm font-medium text-gray-800">Click to view larger</span>
+                </div>
+              </div>
             </div>
             <p className="text-sm text-gray-500 mt-4 text-center">
-              Click on different certifications above to view their specific quality specifications
+              Click on different certifications above to view their specifications, or click the image to view larger
             </p>
           </div>
         </div>
       </div>
+
+      {/* Image Modal */}
+      {isModalOpen && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-2 bg-black/90 backdrop-blur-sm"
+          onClick={closeModal}
+        >
+          <div 
+            className="relative w-full h-full max-w-none flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-200 hover:scale-110"
+              aria-label="Close modal"
+            >
+              <svg 
+                className="w-6 h-6" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M6 18L18 6M6 6l12 12" 
+                />
+              </svg>
+            </button>
+
+            {/* Modal content */}
+            <div className="bg-white rounded-lg shadow-2xl w-[95vw] h-[95vh] overflow-hidden flex flex-col">
+              <div className="p-3 border-b border-gray-200 flex-shrink-0">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {modalTitle} - Quality Specifications
+                </h3>
+              </div>
+              <div className="relative flex-1 bg-gray-50 min-h-0">
+                <Image
+                  src={modalImage}
+                  alt={`${modalTitle} Quality Specifications`}
+                  fill
+                  className="object-contain p-2"
+                  sizes="95vw"
+                  priority
+                />
+              </div>
+              <div className="p-2 bg-gray-50 text-center flex-shrink-0">
+                <p className="text-xs text-gray-600">
+                  Click outside or press ESC to close
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 } 
