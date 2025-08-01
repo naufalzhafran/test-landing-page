@@ -17,6 +17,13 @@ const aboutImages: AboutImage[] = [
   { src: "/about-us/about-us-8.webp", alt: "About us image 8" },
   { src: "/about-us/about-us-9.webp", alt: "About us image 9" },
   { src: "/about-us/about-us-10.webp", alt: "About us image 10" },
+  { src: "/about-us/about-us-11.webp", alt: "About us image 11" },
+  { src: "/about-us/about-us-12.webp", alt: "About us image 12" },
+  { src: "/about-us/about-us-13.webp", alt: "About us image 13" },
+  { src: "/about-us/about-us-14.webp", alt: "About us image 14" },
+  { src: "/about-us/about-us-15.webp", alt: "About us image 15" },
+  { src: "/about-us/about-us-16.webp", alt: "About us image 16" },
+  { src: "/about-us/about-us-17.webp", alt: "About us image 17" },
 ];
 
 interface DragState {

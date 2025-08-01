@@ -181,7 +181,7 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
                       <span className="text-2xl font-bold text-green-600">
                         {product.price}
                       </span>
-                      <span className="text-sm text-gray-500">Starting from</span>
+                      {/* <span className="text-sm text-gray-500">Starting from</span> */}
                     </div>
                     <ul className="space-y-1 text-sm text-gray-600">
                       {product.features.map((feature, featureIndex) => (

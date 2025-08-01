@@ -69,7 +69,25 @@ const galleryImages: GalleryImage[] = [
     src: "/about-us/about-us-10.webp",
     alt: "Company culture and values",
     title: "Our Facilities"
-  }
+  },
+  {
+    id: "about-us-11",
+    src: "/about-us/about-us-11.webp",
+    alt: "Company culture and values",
+    title: "Our Facilities"
+  },
+  {
+    id: "about-us-12",
+    src: "/about-us/about-us-12.webp",
+    alt: "Company culture and values",
+    title: "Our Facilities"
+  },
+  {
+    id: "about-us-13",
+    src: "/about-us/about-us-13.webp",
+    alt: "Company culture and values",
+    title: "Our Facilities"
+  },
 ];
 
 interface DragState {

@@ -72,9 +72,9 @@ export default function Home() {
               Indonesia&apos;s leading world-class quality coconut shell
               charcoal, wood charcoal, and briquettes from Indonesia.
             </p>
-            <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-200 hero-subtitle">
+            {/* <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-200 hero-subtitle">
               Competitive pricing, and reliable shipping worldwide.
-            </p>
+            </p> */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
               {/* <Link
                 href="#contact"
@@ -89,22 +89,26 @@ export default function Home() {
                 Contact Us
               </Link> */}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white">20+</div>
-                <div className="text-gray-300">Countries Served</div>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-20 max-w-4xl mx-auto">
+              <div className="bg-white/1 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <img src="/partners/cococommunity.webp" alt="Countries Served" className="h-20 w-20 mx-auto mb-2"/>
+                {/* <div className="text-3xl font-bold text-white">20+</div>
+                <div className="text-gray-300">Countries Served</div> */}
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white">500+</div>
-                <div className="text-gray-300">Happy Clients</div>
+              <div className="bg-white/1 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <img src="/partners/Mentri Perdagangan Republic Indonesia.webp" alt="Countries Served" className="h-20 w-20 mx-auto mb-2"/>
+                {/* <div className="text-3xl font-bold text-white">500+</div>
+                <div className="text-gray-300">Happy Clients</div> */}
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white">10K+</div>
-                <div className="text-gray-300">Tons Exported</div>
+              <div className="bg-white/1 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <img src="/partners/Lambang_Bea_dan_Cukai.svg.webp" alt="Countries Served" className="h-20 w-20 mx-auto mb-2"/>
+                {/* <div className="text-3xl font-bold text-white">10K+</div>
+                <div className="text-gray-300">Tons Exported</div> */}
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white">ISO</div>
-                <div className="text-gray-300">Certified</div>
+              <div className="bg-white/1 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <img src="/partners/Kamar Dagang Indonesia.webp" alt="Countries Served" className="h-20 w-20 mx-auto mb-2"/>
+                {/* <div className="text-3xl font-bold text-white">ISO</div>
+                <div className="text-gray-300">Certified</div> */}
               </div>
             </div>
           </div>
@@ -154,12 +158,12 @@ export default function Home() {
                 title: "Coconut Shell Charcoal Briquettes",
                 description:
                   "Perfect for shisha and hookah. Clean burn, minimal ash, long-lasting heat.",
-                price: "$570/ton",
+                price: "Inquiry Us!",
                 features: [
-                  "2+ hours burning time",
-                  "1.6% ash content",
-                  "Odorless and smokeless",
-                  "Multiple shapes available",
+                  // "2+ hours burning time",
+                  // "1.6% ash content",
+                  // "Odorless and smokeless",
+                  // "Multiple shapes available",
                 ],
               },
               {
@@ -168,12 +172,12 @@ export default function Home() {
                 title: "Premium Wood Charcoal",
                 description:
                   "Made from Halaban and Binchotan wood. High heat output and durability.",
-                price: "$220/ton",
+                price: "Inquiry Us!",
                 features: [
-                  "High calorific value",
-                  "Low moisture content",
-                  "Long burning time",
-                  "Perfect for grilling",
+                  // "High calorific value",
+                  // "Low moisture content",
+                  // "Long burning time",
+                  // "Perfect for grilling",
                 ],
               },
               {
@@ -182,12 +186,12 @@ export default function Home() {
                 title: "Hookah Premium Cubes",
                 description:
                   "Premium cube-shaped briquettes specifically designed for hookah lounges.",
-                price: "$750/ton",
+                price: "Inquiry Us!",
                 features: [
-                  "Perfect cube shape",
-                  "No taste interference",
-                  "Long-lasting heat",
-                  "Professional grade",
+                  // "Perfect cube shape",
+                  // "No taste interference",
+                  // "Long-lasting heat",
+                  // "Professional grade",
                 ],
               },
               {
@@ -196,12 +200,12 @@ export default function Home() {
                 title: "Cylinder Charcoal Briquettes",
                 description:
                   "Uniform cylinder shape for consistent heat distribution and easy handling.",
-                price: "$650/ton",
+                price: "Inquiry Us!",
                 features: [
-                  "Uniform cylinder shape",
-                  "Even heat distribution",
-                  "Easy to stack and store",
-                  "Consistent burning time",
+                  // "Uniform cylinder shape",
+                  // "Even heat distribution",
+                  // "Easy to stack and store",
+                  // "Consistent burning time",
                 ],
               },
               {
@@ -210,12 +214,12 @@ export default function Home() {
                 title: "Pillow BBQ Briquettes",
                 description:
                   "Classic pillow-shaped briquettes perfect for BBQ and grilling enthusiasts.",
-                price: "$680/ton",
+                price: "Inquiry Us!",
                 features: [
-                  "Classic pillow shape",
-                  "Ideal for BBQ grilling",
-                  "Long burning duration",
-                  "Food-safe materials",
+                  // "Classic pillow shape",
+                  // "Ideal for BBQ grilling",
+                  // "Long burning duration",
+                  // "Food-safe materials",
                 ],
               },
               {
@@ -224,12 +228,12 @@ export default function Home() {
                 title: "Premium Wood Pellets",
                 description:
                   "High-quality wood pellets for efficient heating and cooking applications.",
-                price: "$380/ton",
+                price: "Inquiry Us!",
                 features: [
-                  "100% natural wood",
-                  "Low ash content",
-                  "High energy density",
-                  "Eco-friendly fuel",
+                  // "100% natural wood",
+                  // "Low ash content",
+                  // "High energy density",
+                  // "Eco-friendly fuel",
                 ],
               },
             ]}
@@ -333,7 +337,7 @@ export default function Home() {
                   image: "/partners/Lambang_Bea_dan_Cukai.svg.webp"
                 },
                 {
-                  name: "ACT",
+                  name: "Anindya Certification and Testing",
                   image: "/partners/LOGO_ACT_NEW_clear-bg.webp"
                 },
                 {
@@ -359,6 +363,10 @@ export default function Home() {
                 {
                   name: "Kementerian Perdagangan",
                   image: "/partners/Mentri Perdagangan Republic Indonesia.webp"
+                },
+                {
+                  name: "Int. Coconut Community",
+                  image: "/partners/cococommunity.webp"
                 }
               ].map((partner, index) => (
                 <div key={index} className="flex flex-col items-center justify-center p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-all duration-300 hover:scale-105">
@@ -594,9 +602,9 @@ export default function Home() {
                 </a>
               </div> */}
             </div>
-            {/* <div>
-              <h4 className="text-lg font-semibold mb-4">Our Products</h4>
-              <ul className="space-y-2 text-gray-400">
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Head Office</h4>
+              {/* <ul className="space-y-2 text-gray-400">
                 <li>
                   <a
                     href="#products"
@@ -645,13 +653,13 @@ export default function Home() {
                     View All Products
                   </a>
                 </li>
-              </ul>
-            </div> */}
-            {/* <div>
+              </ul> */}
+            </div>
+            <div>
               <h4 className="text-lg font-semibold mb-4">
-                Services & Partnership
+                Product Catalogue
               </h4>
-              <ul className="space-y-2 text-gray-400">
+              {/* <ul className="space-y-2 text-gray-400">
                 <li>
                   <a
                     href="#partnership"
@@ -694,11 +702,11 @@ export default function Home() {
                     Quality Assurance
                   </a>
                 </li>
-              </ul>
-            </div> */}
-            {/* <div>
-              <h4 className="text-lg font-semibold mb-4">Company Info</h4>
-              <ul className="space-y-2 text-gray-400">
+              </ul> */}
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Connect With Us!</h4>
+              {/* <ul className="space-y-2 text-gray-400">
                 <li>
                   <a
                     href="#about"
@@ -744,14 +752,14 @@ export default function Home() {
                     ISO Certification
                   </a>
                 </li>
-              </ul>
-            </div> */}
+              </ul> */}
+            </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-gray-400">
               <p>
                 &copy; 2025 PT. Skala Sinergi Indonesia. Sinergi Charcoal
-                Nusantara. All rights reserved.
+                Nusantara.
               </p>
             </div>
           </div>

@@ -72,7 +72,7 @@ export default function QualitySection() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Every batch undergoes rigorous testing and quality control to
-            ensure consistent performance.
+            ensure consistent performance, With our credible partners trusted worldwide.
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

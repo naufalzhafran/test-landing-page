@@ -11,13 +11,13 @@ interface FAQItem {
 const faqData: FAQItem[] = [
   {
     id: 'moq',
-    question: 'MOQ',
-    answer: 'Our minimum order quantity is 1 x 20 ft container (18 tons)'
+    question: 'Minimum Order Quantity',
+    answer: 'Our minimum order quantity is 25 Metric-Tons (1 x 20/40 ft container)'
   },
   {
     id: 'quotation',
     question: 'Quotation',
-    answer: 'Quotation to the customer maximum of 3 days'
+    answer: 'Our order process begins with the Buyer\'s Letter of Intent, prompting us to issue a detailed Quotation. Upon the Buyer\'s subsequent issuance of a Purchase Order, the Seller receives a down payment of 50%, and both parties finalize the packaging design, after which an official invoice is issued to the Buyer.'
   },
   {
     id: 'shipping',
@@ -27,7 +27,7 @@ const faqData: FAQItem[] = [
   {
     id: 'shipping-terms',
     question: 'Shipping',
-    answer: 'Freight On Board (FOB) and Exwork (EXW)'
+    answer: 'Freight On Board (FOB)'
   },
   {
     id: 'samples',
@@ -40,7 +40,7 @@ const faqData: FAQItem[] = [
     answer: (
       <ul className="list-disc list-inside space-y-1">
         <li>We use the bank transfer payment method (T/T)</li>
-        <li>Payment settlement should be made 7 days before loading the container</li>
+        <li>Payment is structured as 50% upon Purchase Order issuance and the remaining 50% upon the loading of commodities into the container.</li>
       </ul>
     )
   }
