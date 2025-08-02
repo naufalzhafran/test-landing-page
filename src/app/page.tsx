@@ -76,18 +76,18 @@ export default function Home() {
               Competitive pricing, and reliable shipping worldwide.
             </p> */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-              {/* <Link
-                href="#contact"
+              <Link
+                href="products"
                 className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
               >
-                Our Products
+                Product Catalogue
               </Link>
               <Link
                 href="#contact"
                 className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
               >
-                Contact Us
-              </Link> */}
+                Company Profile
+              </Link>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
@@ -356,7 +356,7 @@ export default function Home() {
                   image: "/partners/go4WorldBusiness.webp",
                 },
                 {
-                  name: "Kamar Dagang Indonesia",
+                  name: "Indonesian Chamber of Commerce",
                   image: "/partners/Kamar Dagang Indonesia.webp",
                 },
                 {
@@ -365,7 +365,7 @@ export default function Home() {
                     "/partners/Kementerian-Hukum-Dan-Ham-Kemenkumham-Logo-Vector-150x150.webp",
                 },
                 {
-                  name: "Bea dan Cukai",
+                  name: "Directorate General of Customs and Excise",
                   image: "/partners/Lambang_Bea_dan_Cukai.svg.webp",
                 },
                 {
@@ -394,7 +394,7 @@ export default function Home() {
                   image: "/partners/Maersk_1-300x271.webp",
                 },
                 {
-                  name: "Kementerian Perdagangan",
+                  name: "Ministry of Trade Republic Indonesia",
                   image: "/partners/Mentri Perdagangan Republic Indonesia.webp",
                 },
                 {
