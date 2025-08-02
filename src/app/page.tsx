@@ -89,26 +89,54 @@ export default function Home() {
                 Contact Us
               </Link> */}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-20 max-w-4xl mx-auto">
-              <div className="bg-white/1 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <img src="/partners/cococommunity.webp" alt="Countries Served" className="h-20 w-20 mx-auto mb-2"/>
-                {/* <div className="text-3xl font-bold text-white">20+</div>
-                <div className="text-gray-300">Countries Served</div> */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105">
+                <div className="flex flex-col items-center justify-center h-full">
+                  <img
+                    src="/partners/cococommunity.webp"
+                    alt="International Coconut Community"
+                    className="h-14 w-auto mx-auto object-contain filter brightness-100 mb-3"
+                  />
+                  <p className="text-white text-xs text-center font-medium leading-tight">
+                    International Coconut Community
+                  </p>
+                </div>
               </div>
-              <div className="bg-white/1 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <img src="/partners/Mentri Perdagangan Republic Indonesia.webp" alt="Countries Served" className="h-20 w-20 mx-auto mb-2"/>
-                {/* <div className="text-3xl font-bold text-white">500+</div>
-                <div className="text-gray-300">Happy Clients</div> */}
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105">
+                <div className="flex flex-col items-center justify-center h-full">
+                  <img
+                    src="/partners/Mentri Perdagangan Republic Indonesia.webp"
+                    alt="Ministry of Trade Republic Indonesia"
+                    className="h-14 w-auto mx-auto object-contain filter brightness-100 mb-3"
+                  />
+                  <p className="text-white text-xs text-center font-medium leading-tight">
+                    Ministry of Trade Republic Indonesia
+                  </p>
+                </div>
               </div>
-              <div className="bg-white/1 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <img src="/partners/Lambang_Bea_dan_Cukai.svg.webp" alt="Countries Served" className="h-20 w-20 mx-auto mb-2"/>
-                {/* <div className="text-3xl font-bold text-white">10K+</div>
-                <div className="text-gray-300">Tons Exported</div> */}
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105">
+                <div className="flex flex-col items-center justify-center h-full">
+                  <img
+                    src="/partners/Lambang_Bea_dan_Cukai.svg.webp"
+                    alt="Directorate General of Customs and Excise"
+                    className="h-14 w-auto mx-auto object-contain filter brightness-100 mb-3"
+                  />
+                  <p className="text-white text-xs text-center font-medium leading-tight">
+                    Directorate General of Customs and Excise
+                  </p>
+                </div>
               </div>
-              <div className="bg-white/1 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <img src="/partners/Kamar Dagang Indonesia.webp" alt="Countries Served" className="h-20 w-20 mx-auto mb-2"/>
-                {/* <div className="text-3xl font-bold text-white">ISO</div>
-                <div className="text-gray-300">Certified</div> */}
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105">
+                <div className="flex flex-col items-center justify-center h-full">
+                  <img
+                    src="/partners/Kamar Dagang Indonesia.webp"
+                    alt="Indonesian Chamber of Commerce"
+                    className="h-14 w-auto mx-auto object-contain filter brightness-100 mb-3"
+                  />
+                  <p className="text-white text-xs text-center font-medium leading-tight">
+                    Indonesian Chamber of Commerce
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -116,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-accent">
+      <section id="about" className="py-10 bg-gradient-accent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left: Description */}
@@ -305,7 +333,8 @@ export default function Home() {
               Our Partners & Certifications
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              Trusted by leading organizations and certified by government institutions
+              Trusted by leading organizations and certified by government
+              institutions
             </p>
           </div>
 
@@ -314,73 +343,78 @@ export default function Home() {
               {[
                 {
                   name: "Asosiasi Logistik & Forwarding Indonesia",
-                  image: "/partners/Asosiasi Logistik & Forwarding Indonesia.webp"
+                  image:
+                    "/partners/Asosiasi Logistik & Forwarding Indonesia.webp",
                 },
                 {
                   name: "Carsurin",
-                  image: "/partners/Carsurin.webp"
+                  image: "/partners/Carsurin.webp",
                 },
                 {
                   name: "go4WorldBusiness",
-                  image: "/partners/go4WorldBusiness.webp"
+                  image: "/partners/go4WorldBusiness.webp",
                 },
                 {
                   name: "Kamar Dagang Indonesia",
-                  image: "/partners/Kamar Dagang Indonesia.webp"
+                  image: "/partners/Kamar Dagang Indonesia.webp",
                 },
                 {
                   name: "Kementerian Hukum Dan HAM",
-                  image: "/partners/Kementerian-Hukum-Dan-Ham-Kemenkumham-Logo-Vector-150x150.webp"
+                  image:
+                    "/partners/Kementerian-Hukum-Dan-Ham-Kemenkumham-Logo-Vector-150x150.webp",
                 },
                 {
                   name: "Bea dan Cukai",
-                  image: "/partners/Lambang_Bea_dan_Cukai.svg.webp"
+                  image: "/partners/Lambang_Bea_dan_Cukai.svg.webp",
                 },
                 {
                   name: "Anindya Certification and Testing",
-                  image: "/partners/LOGO_ACT_NEW_clear-bg.webp"
+                  image: "/partners/LOGO_ACT_NEW_clear-bg.webp",
                 },
                 {
                   name: "Direktorat Jenderal Pajak",
-                  image: "/partners/Logo_djp.svg-166x300.webp"
+                  image: "/partners/Logo_djp.svg-166x300.webp",
                 },
                 {
                   name: "BKPM",
-                  image: "/partners/Logo_Kementerian_Investasi_BKPM_Warna_Square.webp"
+                  image:
+                    "/partners/Logo_Kementerian_Investasi_BKPM_Warna_Square.webp",
                 },
                 {
                   name: "Sucofindo",
-                  image: "/partners/Logo_sucofindo.webp"
+                  image: "/partners/Logo_sucofindo.webp",
                 },
                 {
                   name: "MSDS",
-                  image: "/partners/logo-msds.webp"
+                  image: "/partners/logo-msds.webp",
                 },
                 {
                   name: "Maersk",
-                  image: "/partners/Maersk_1-300x271.webp"
+                  image: "/partners/Maersk_1-300x271.webp",
                 },
                 {
                   name: "Kementerian Perdagangan",
-                  image: "/partners/Mentri Perdagangan Republic Indonesia.webp"
+                  image: "/partners/Mentri Perdagangan Republic Indonesia.webp",
                 },
                 {
                   name: "Int. Coconut Community",
-                  image: "/partners/cococommunity.webp"
-                }
+                  image: "/partners/cococommunity.webp",
+                },
               ].map((partner, index) => (
-                <div key={index} className="flex flex-col items-center justify-center p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center justify-center h-16 mb-3">
+                <div
+                  key={index}
+                  className="flex flex-col items-center justify-between p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-all duration-300 hover:scale-105 h-32 w-full"
+                >
+                  <div className="flex items-center justify-center h-16 w-full">
                     <Image
                       src={partner.image}
                       alt={partner.name}
                       width={120}
                       height={80}
-                      className="max-w-full h-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
-                      style={{ maxHeight: '60px' }}
+                      className="max-w-full max-h-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                     />
                   </div>
-                  <p className="text-white text-xs text-center font-medium leading-tight">
+                  <p className="text-white text-xs text-center font-medium leading-tight h-8 flex items-center">
                     {partner.name}
                   </p>
                 </div>
@@ -505,7 +539,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-{/* 
+                  {/* 
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
                       Product Interest
@@ -574,8 +608,8 @@ export default function Home() {
                 Sinergi Charcoal Nusantara
               </h3>
               <p className="flex items-center space-x-4 text-sm text-gray-400 mb-4">
-                Puri Botanic Junction Blok I9 No. 5 Jl. Joglo Raya, RT. 007, RW. 001.
-                Kelurahan Joglo. Kecamatan Kembangan, Jakarta Barat.
+                Puri Botanic Junction Blok I9 No. 5 Jl. Joglo Raya, RT. 007, RW.
+                001. Kelurahan Joglo. Kecamatan Kembangan, Jakarta Barat.
                 Provinsi DKI Jakarta, 11640.
               </p>
               <div className="flex items-center space-x-4 text-sm text-gray-400 mb-4">
@@ -604,61 +638,32 @@ export default function Home() {
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Head Office</h4>
-              {/* <ul className="space-y-2 text-gray-400">
-                <li>
-                  <a
-                    href="#products"
-                    className="hover:text-white transition-colors"
-                  >
-                    Coconut Shell Briquettes
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#products"
-                    className="hover:text-white transition-colors"
-                  >
-                    Premium Wood Charcoal
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#products"
-                    className="hover:text-white transition-colors"
-                  >
-                    BBQ Charcoal Briquettes
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#products"
-                    className="hover:text-white transition-colors"
-                  >
-                    Hookah Premium Cubes
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#products"
-                    className="hover:text-white transition-colors"
-                  >
-                    Restaurant Grade Briquettes
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#products"
-                    className="hover:text-white transition-colors"
-                  >
-                    View All Products
-                  </a>
-                </li>
-              </ul> */}
+              <div className="space-y-4">
+                <div className="text-sm text-gray-400">
+                  <p className="mb-2">📍 Location:</p>
+                  <p className="leading-relaxed">
+                    Puri Botanic Junction Blok I9 No. 5<br/>
+                    Jl. Joglo Raya, RT. 007, RW. 001<br/>
+                    Kelurahan Joglo, Kecamatan Kembangan<br/>
+                    Jakarta Barat, DKI Jakarta 11640
+                  </p>
+                </div>
+                <div className="w-full h-48 rounded-lg overflow-hidden border border-gray-700">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2!2d106.7!3d-6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMDAuMCJTIDEwNsKwNDInMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="PT. Skala Sinergi Indonesia Head Office Location"
+                  ></iframe>
+                </div>
+              </div>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-4">
-                Product Catalogue
-              </h4>
+              <h4 className="text-lg font-semibold mb-4">Product Catalogue</h4>
               {/* <ul className="space-y-2 text-gray-400">
                 <li>
                   <a

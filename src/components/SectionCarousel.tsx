@@ -268,7 +268,7 @@ const SectionCarousel: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full max-w-md mx-auto rounded-2xl relative overflow-hidden select-none"
+      className="w-full rounded-2xl relative overflow-hidden select-none"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -295,7 +295,7 @@ const SectionCarousel: React.FC = () => {
         }`}
         style={{
           transform: `translateX(${transform}%)`,
-          minHeight: 300,
+          minHeight: 400,
         }}
         onTransitionEnd={handleTransitionEnd}
       >
@@ -308,7 +308,7 @@ const SectionCarousel: React.FC = () => {
               src={image.src}
               alt={image.alt}
               className="w-full h-full object-cover"
-              style={{ height: '300px' }}
+              style={{ height: '400px' }}
             />
           </div>
         ))}
