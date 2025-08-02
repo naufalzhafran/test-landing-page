@@ -89,16 +89,17 @@ export default function Home() {
                 Contact Us
               </Link> */}
             </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30 hover:bg-white/30 transition-all duration-300 hover:scale-105">
                 <div className="flex flex-col items-center justify-center h-full">
                   <img
-                    src="/partners/cococommunity.webp"
-                    alt="International Coconut Community"
+                    src="/partners/skala.webp"
+                    alt="Skala Sinergi Indonesia"
                     className="h-14 w-auto mx-auto object-contain filter brightness-100 mb-3"
                   />
                   <p className="text-white text-xs text-center font-medium leading-tight">
-                    International Coconut Community
+                  PT Skala Sinergi Indonesia
                   </p>
                 </div>
               </div>
@@ -640,13 +641,13 @@ export default function Home() {
               <h4 className="text-lg font-semibold mb-4">Head Office</h4>
               <div className="space-y-4">
                 <div className="text-sm text-gray-400">
-                  <p className="mb-2">📍 Location:</p>
+                  {/* <p className="mb-2">📍 Location:</p>
                   <p className="leading-relaxed">
                     Puri Botanic Junction Blok I9 No. 5<br/>
                     Jl. Joglo Raya, RT. 007, RW. 001<br/>
                     Kelurahan Joglo, Kecamatan Kembangan<br/>
                     Jakarta Barat, DKI Jakarta 11640
-                  </p>
+                  </p> */}
                 </div>
                 <div className="w-full h-48 rounded-lg overflow-hidden border border-gray-700">
                   <iframe
