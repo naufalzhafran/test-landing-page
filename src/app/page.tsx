@@ -155,7 +155,7 @@ export default function Home() {
               {
                 id: "coconut-shell-briquettes",
                 image: "/product-selection/Coconut Briquettes.webp",
-                title: "Coconut Shell Charcoal Briquettes",
+                title: "Coconut Shell Charcoal",
                 description:
                   "Perfect for shisha and hookah. Clean burn, minimal ash, long-lasting heat.",
                 price: "Inquiry Us!",
@@ -441,7 +441,7 @@ export default function Home() {
                     <div>
                       <div className="font-medium text-gray-800">Email</div>
                       <div className="text-sm text-gray-600">
-                        skalasinergi@gmail.com
+                        sales@skalasinergi.id
                       </div>
                     </div>
                   </div>
@@ -579,7 +579,7 @@ export default function Home() {
                 Provinsi DKI Jakarta, 11640.
               </p>
               <div className="flex items-center space-x-4 text-sm text-gray-400 mb-4">
-                <span>skalasinergi@gmail.com</span>
+                <span>sales@skalasinergi.id</span>
               </div>
               {/* <div className="flex space-x-4">
                 <a
