@@ -72,16 +72,22 @@ export default function Home() {
               Indonesia&apos;s leading world-class quality coconut shell
               charcoal, wood charcoal, and briquettes from Indonesia.
             </p>
-            {/* <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-200 hero-subtitle">
-              Competitive pricing, and reliable shipping worldwide.
-            </p> */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-              <Link
-                href="products"
+              {/* <Link
+                href="/Sinergi Charcoal Nusantara - PT Skala Sinergi Indonesia.pdf"
                 className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
               >
                 Product Catalogue
-              </Link>
+              </Link> */}
+              <a
+                href="/Sinergi Charcoal Nusantara - PT Skala Sinergi Indonesia.pdf"
+                className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Product Catalogue
+                </a>
               <Link
                 href="#contact"
                 className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
