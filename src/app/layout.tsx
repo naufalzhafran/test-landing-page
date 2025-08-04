@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Premium Indonesian Charcoal Supplier | Export Quality Products",
+    title: "Premium Indonesian Charcoal Supplier | Export Quality Products | Sinergi Charcoal Nusantara",
     description: "Leading Indonesian charcoal supplier offering premium coconut shell charcoal, wood charcoal, and briquettes for global export.",
-    url: "https://your-domain.com",
+    url: "https://sinergicharcoal.com/",
     siteName: "Premium Indonesian Charcoal",
     images: [
       {
@@ -79,7 +79,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="canonical" href="https://your-domain.com" />
+        <link rel="canonical" href="https://sinergicharcoal.com/" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#1a1a1a" />
         <script
@@ -89,7 +89,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Premium Indonesian Charcoal",
-              url: "https://your-domain.com",
+              url: "https://sinergicharcoal.com/",
               logo: "https://your-domain.com/logo.png",
               description: "Leading Indonesian charcoal supplier offering premium coconut shell charcoal, wood charcoal, and briquettes for global export.",
               address: {
