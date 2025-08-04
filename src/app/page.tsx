@@ -86,10 +86,10 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                Product Catalogue
+                Product Catalog
                 </a>
               <Link
-                href="#contact"
+                href=""
                 className="btn btn-secondary text-lg px-8 py-4 bg-white text-gray-900 hover:bg-gray-100"
               >
                 Company Profile
